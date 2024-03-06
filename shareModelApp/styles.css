@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #000;
+}
+
+#circle1 {
+  background: linear-gradient(-25deg, #d84869, #f46641);
+  animation: circle1Animate 15s infinite;
+}
+
+@keyframes circle1Animate {
+  50% {
+    left: 33%;
+    top: 4%;
+    scale: 1.11;
+  }
+}
+
+#circle2 {
+  background: linear-gradient(-25deg, #5648d8, #8641f4);
+  animation: circle2Animate 8s infinite;
+}
+
+@keyframes circle2Animate {
+  50% {
+    bottom: 6%;
+    right: 31%;
+  }
+}
+
+#card {
+  background: #ffffff1a;
+}

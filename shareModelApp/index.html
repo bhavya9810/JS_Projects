@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Model App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="wrapper"
+      class="w-[100vw] h-[100vh] flex justify-center items-center relative"
+    >
+      <!-- card  -->
+      <div id="card ">
+        <div id="pic" class="rounded-full h-10 w-10">
+          <img
+            src="assets/man-wearing-denim-shirt-red-suspenders_273609-19395.avif"
+            alt=""
+            class="w-[100%] h-[100%] rounded-full"
+          />
+        </div>
+        <div><h2>Random Man</h2></div>
+        <div><h3>Founder,Code Help</h3></div>
+        <div id="details">
+          <button onclick="openModal()" id="share-modal">
+            <i class="fa-solid fa-share"></i> Share My Profile
+          </button>
+          <button>Follow Me</button>
+        </div>
+      </div>
+
+      <!-- circle 1 -->
+      <div
+        id="circle1"
+        class="rounded-full w-52 h-52 top-[5%] left-[30%] absolute shadow-[0_0_50px_#d84869]"
+      ></div>
+
+      <!-- circle 2 -->
+      <div
+        id="circle2"
+        class="rounded-full bottom-[5%] right-[30%] w-[19em] h-[19em] absolute shadow-[0_0_50px_#5648d8]"
+      ></div>
+
+      <!-- modal open -->
+      <div id="modal" class="w-52 hidden">
+        <div
+          id="modalHeader"
+          class="flex justify-between border-b-2 border-slate-950"
+        >
+          <h2>Share My Profile</h2>
+          <i onclick="closeModel()" class="close-modal fa-solid fa-xmark"></i>
+        </div>
+
+        <div><h4>Share this via</h4></div>
+        <div id="share-buttons" class="flex">
+          <button id="button1"><i class="fa-brands fa-facebook-f"></i></button>
+          <button id="button2"><i class="fa-brands fa-x-twitter"></i></button>
+          <button id="button3"><i class="fa-brands fa-instagram"></i></button>
+          <button id="button4"><i class="fa-brands fa-whatsapp"></i></button>
+          <button id="button5"><i class="fa-brands fa-telegram"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay close-modal" onclick="closeModel()"></div>
+
+    <script
+      src="https://kit.fontawesome.com/c912f564e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
