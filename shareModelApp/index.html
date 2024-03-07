@@ -13,7 +13,7 @@
       class="w-[100vw] h-[100vh] flex justify-center items-center relative"
     >
       <!-- card  -->
-      <div id="card ">
+      <div class="card">
         <div id="pic" class="rounded-full h-10 w-10">
           <img
             src="assets/man-wearing-denim-shirt-red-suspenders_273609-19395.avif"
@@ -21,13 +21,15 @@
             class="w-[100%] h-[100%] rounded-full"
           />
         </div>
-        <div><h2>Random Man</h2></div>
-        <div><h3>Founder,Code Help</h3></div>
-        <div id="details">
-          <button onclick="openModal()" id="share-modal">
+        <div class="text-[2em] text-center"><h2>Random Man</h2></div>
+        <div class="text-center text-[#ffffff85]">
+          <h3>Founder,Code Help</h3>
+        </div>
+        <div class="details">
+          <button onclick="openModal()" class="btn-share btn-card">
             <i class="fa-solid fa-share"></i> Share My Profile
           </button>
-          <button>Follow Me</button>
+          <button class="btn-follow btn-card">Follow Me</button>
         </div>
       </div>
 
@@ -44,28 +46,35 @@
       ></div>
 
       <!-- modal open -->
-      <div id="modal" class="w-52 hidden">
-        <div
-          id="modalHeader"
-          class="flex justify-between border-b-2 border-slate-950"
-        >
-          <h2>Share My Profile</h2>
-          <i onclick="closeModel()" class="close-modal fa-solid fa-xmark"></i>
+      <div class="modal" class="w-52">
+        <div id="modalHeader">
+          <h1>Share My Profile</h1>
+          <i onclick="closeModel()" class="close-btn fa-solid fa-xmark"></i>
         </div>
 
-        <div><h4>Share this via</h4></div>
-        <div id="share-buttons" class="flex">
-          <button id="button1"><i class="fa-brands fa-facebook-f"></i></button>
-          <button id="button2"><i class="fa-brands fa-x-twitter"></i></button>
-          <button id="button3"><i class="fa-brands fa-instagram"></i></button>
-          <button id="button4"><i class="fa-brands fa-whatsapp"></i></button>
-          <button id="button5"><i class="fa-brands fa-telegram"></i></button>
+        <div><h3>Share this via</h3></div>
+        <div id="share-buttons">
+          <button class="icon-round" id="button1">
+            <i class="fa-brands fa-facebook-f"></i>
+          </button>
+          <button class="icon-round" id="button2">
+            <i class="fa-brands fa-x-twitter"></i>
+          </button>
+          <button class="icon-round" id="button3">
+            <i class="fa-brands fa-instagram"></i>
+          </button>
+          <button class="icon-round" id="button4">
+            <i class="fa-brands fa-whatsapp"></i>
+          </button>
+          <button class="icon-round" id="button5">
+            <i class="fa-brands fa-telegram"></i>
+          </button>
         </div>
       </div>
     </div>
 
     <!-- overlay -->
-    <div class="overlay close-modal" onclick="closeModel()"></div>
+    <div class="overlay-modal" onclick="closeModel()"></div>
 
     <script
       src="https://kit.fontawesome.com/c912f564e6.js"
