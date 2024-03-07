@@ -1,2 +1,2 @@
 # JS_Projects
-All projects done on JS,HTML,CSS and tailwind
+All projects done in JS,HTML,CSS and tailwind
